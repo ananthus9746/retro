@@ -1,0 +1,38 @@
+.uploadContainer {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: hsl(292, 74%, 73%);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fileInput{
+    width: 220px;
+  
+}
+.descriptionInput{
+    width: 100%;
+    padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}
+.uploadButton {
+    padding: 10px;
+    background-color: #88066c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.uploadButton:hover {
+    background-color: #a04545;
+}
+
+.progress {
+    width: 100%;
+    margin-top: 10px;
+}

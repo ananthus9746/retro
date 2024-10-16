@@ -7,6 +7,8 @@ const Navbar = () => {
             <Link to="/" className={`${styles.link} ${styles.primary}`}>Home</Link>
             <Link to="/about" className={`${styles.link} ${styles.secondary}`}>About</Link>
             <Link to="/contact" className={`${styles.link} ${styles.tertiary}`}>Contact</Link>
+            <Link to="/gallery" className={`${styles.link} ${styles.primary_}`}>Gallery</Link>
+
         </nav>
     );
 };

@@ -32,6 +32,9 @@
 .primary {
     background: #8d029a;
 }
+.primary_ {
+    background: #A81000;
+}
 
 .primary:hover,
 .primary:focus {
