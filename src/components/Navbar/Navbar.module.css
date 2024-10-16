@@ -1,0 +1,83 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #333; */
+    padding: 1rem;
+
+    font-family: 'VT323', monospace;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding: .5rem 2rem;
+    display: inline-block;
+    border-bottom: 6px inset rgba(0, 0, 0, .5);
+    border-left: 6px inset rgba(0, 0, 0, .5);
+    border-right: 6px inset rgba(255, 255, 255, .5);
+    border-top: 6px inset rgba(255, 255, 255, .5);
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #7C7C7C;
+    margin: 0.5rem;
+    transition: background 0.2s ease;
+}
+
+.link:hover,
+.link:focus {
+    background: #BCBCBC;
+}
+
+.primary {
+    background: #8d029a;
+}
+
+.primary:hover,
+.primary:focus {
+    background: #A81000;
+}
+
+.secondary {
+    background: #005800;
+}
+
+.secondary:hover,
+.secondary:focus {
+    background: #006800;
+}
+
+.tertiary {
+    background: #0000BC;
+}
+
+.tertiary:hover,
+.tertiary:focus {
+    background: #0000FC;
+}
+
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        /* Stack links vertically on smaller screens */
+        align-items: center;
+    }
+
+    .link {
+        font-size: 1.8rem;
+        /* Reduce font size for smaller screens */
+        padding: 0.5rem 1.5rem;
+        /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .link {
+        font-size: 1.6rem;
+        /* Further reduce font size for very small screens */
+        padding: 0.5rem 1rem;
+        /* Smaller padding */
+    }
+}

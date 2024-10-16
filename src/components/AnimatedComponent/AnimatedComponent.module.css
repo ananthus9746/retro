@@ -1,0 +1,10 @@
+.animatedBox {
+    background-color: #add8e6;
+    /* Blue background */
+    color: #ff4d4f;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: 18px solid #ffec3d;
+        font-family: 'VT323', monospace;
+        font-size: 2rem;
+}

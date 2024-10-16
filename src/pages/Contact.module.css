@@ -1,0 +1,64 @@
+.contactContainer {
+    /* background-color: #ffb6c1; */
+    /* Pink background */
+    color: #ff4d4f;
+    /* Red text */
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+
+    font-family: 'VT323', monospace;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ff4d4f;
+}
+
+.input {
+    width: 300px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 2px solid #ff4d4f;
+    font-family: 'Fredoka One', sans-serif;
+}
+
+.button {
+    background-color: #ffec3d;
+    /* Yellow button */
+    color: #ff4d4f;
+    /* Red text */
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff4d4f;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .input {
+        width: 90%;
+    }
+}

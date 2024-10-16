@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+html {
+  font-family: 'VT323', monospace;
+}
+body {
+  background-image: url('./assets/3603084_67663.jpg');
+  /* Adjust the path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ min-height: 100vh;
+  /* Ensure it covers full height */
+  margin: 0;
+  font-family: 'Fredoka One', sans-serif;
+  /* Ensure your retro font is applied */
+}
