@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Gallery from './pages/Gallery/Gallery';
+import ImageTextOverlay from './pages/ImageTextOverlay/ImageTextOverlay';
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/generate" element={<ImageTextOverlay />} />
 
+        
       </Routes>
     </Router>
   );

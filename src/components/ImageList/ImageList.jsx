@@ -2,8 +2,13 @@ import React, { useEffect, useState } from "react";
 import { collection, query, orderBy, getDocs } from "firebase/firestore";
 import { firestore } from "../../firebase";
 import style from './ImageListChat.module.css';
+import giphy from '../../assets/giphy (1).webp';
+import giphy2 from '../../assets/giphy (2).webp';
+import giphy3 from '../../assets/giphy (3).webp';
 
 const ImageList = ({ uploadCompleted }) => {
+    const predefinedImages = [giphy, giphy2, giphy3];
+
     const [images, setImages] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -40,6 +45,11 @@ const ImageList = ({ uploadCompleted }) => {
         setSelectedImage(null);
     };
 
+    const getRandomPredefinedImage = () => {
+        const randomIndex = Math.floor(Math.random() * predefinedImages.length);
+        return predefinedImages[randomIndex];
+    };
+
     if (loading) {
         return <div>Loading...</div>;
     }
@@ -54,7 +64,11 @@ const ImageList = ({ uploadCompleted }) => {
                 {images.length > 0 ? (
                     images.map((image) => (
                         <div key={image.id} className={style.chatMessage} onClick={() => openModal(image)}>
-                            <img src={image.url} alt={image.description} className={style.chatImage} />
+                            <img
+                                src={getRandomPredefinedImage()}
+                                alt={image.description}
+                                className={style.chatImage}
+                            />
                             <p className={style.chatDescription}>{image.description}</p>
                         </div>
                     ))
